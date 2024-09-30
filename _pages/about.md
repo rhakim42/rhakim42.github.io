@@ -11,11 +11,11 @@ I'm Rashida Hakim, a third-year PhD student at Columbia University advised by Pr
 
 Publications
 ======
-**Swim till You Sink: Computing the Limit of a Game** - [arXiv](https://arxiv.org/abs/2408.11146)
-Rashida Hakim, Jason Milionis, Christos Papadimitriou, Georgios Piliouras
+**Swim till You Sink: Computing the Limit of a Game** - [arXiv](https://arxiv.org/abs/2408.11146)  
+Rashida Hakim, Jason Milionis, Christos Papadimitriou, Georgios Piliouras  
 *SAGT 2024, Best Paper Award*
 
-**The Fairness-Quality Trade-off in Clustering** - [arXiv](https://arxiv.org/abs/2408.10002)
-Rashida Hakim, Ana-Andreea Stoica, Christos Papadimitriou, Mihalis Yannakakis
+**The Fairness-Quality Trade-off in Clustering** - [arXiv](https://arxiv.org/abs/2408.10002)  
+Rashida Hakim, Ana-Andreea Stoica, Christos Papadimitriou, Mihalis Yannakakis  
 *To appear at NeurIps 2024*
  
