@@ -1,4 +1,11 @@
-
+---
+title: 'Blog Posts Currently Being Migrated from WordPress'
+date: 2024-09-30
+permalink: /posts/2016/12/errors-multiple-measurement/
+tags:
+  - physics
+  - math
+---
 
 Recently in Physics Club, we have been preparing for the first test in the Physics Olympiad series, the    F = ma contest. The majority of the problems can be solved using basic equations of motion, but occasionally a problem comes up that requires some intuition. And these “intuitive” problems can be much trickier to solve mathematically than they appear to be.
 
@@ -6,7 +13,7 @@ A perfect example is Problem 25 on the 2016 F = ma contest which can be simplifi
 Christina measures a 1.5 meter piece of string with a meter stick, making two measurements which each have an error of  \pm  0.1
 Alice measures the same 1.5 meter length of string with a 2 meter stick, making one measurement which has an error of  \pm  0.2
 
-
+![image](https://github.com/user-attachments/assets/36628081-e8f0-4083-925b-bc9455f659c7)
 
 Who makes the more accurate measurement?
 
@@ -20,15 +27,17 @@ Calculate the expected value of \mid n + m \mid  and compare to the expected val
 
 It is easy to see that the expected value of \mid p \mid  where p is randomly chosen such that  -2 \leq p \leq 2  is 1. Since  p  has an even probability distribution, all we need to show is that \mid p \mid  has an average value of 1. This is pretty clear from a graph of p vs. \mid p \mid  or  \int_{-2}^{2} \mid p \mid dp = 1.
 
+![image](https://github.com/user-attachments/assets/50f32365-a839-40f6-9ad8-f29bbfc36239)
 
 
 Finding the expected value of \mid n + m \mid  is quite a bit trickier, especially when you realize that \mid n + m \mid \neq \mid n \mid + \mid m \mid . We can apply the same process we used above but we have to graph in 3 dimensions because we now have an additional variable. Put n on the x axis, m on the z-axis, and the error on the y-axis. The function \mid n + m \mid  now defines a plane that looks something like this:
 
+![image](https://github.com/user-attachments/assets/59785632-6db4-4919-b5d3-f005085ba4a5)
 
 
 The area under this plane can be calculated by finding the volume of 2 right tetrahedrons using the volume of a right tetrahedron formula ( \frac{abc}{6}  where a, b, and c are the lengths of the sides that from the right angle).
 
-
+![image](https://github.com/user-attachments/assets/d9017628-7b4f-4cb2-a705-f63ab534e667)
 
 So:
 
