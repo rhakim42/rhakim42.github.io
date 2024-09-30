@@ -10,7 +10,7 @@ tags:
 Recently in Physics Club, we have been preparing for the first test in the Physics Olympiad series, the F = ma contest. The majority of the problems can be solved using basic equations of motion, but occasionally a problem comes up that requires some intuition. And these “intuitive” problems can be much trickier to solve mathematically than they appear to be.
 
 A perfect example is Problem 25 on the 2016 F = ma contest which can be simplified down to this:
-Christina measures a 1.5 meter piece of string with a meter stick, making two measurements which each have an error of  \\(\pm  0.1)\\
+Christina measures a 1.5 meter piece of string with a meter stick, making two measurements which each have an error of  $pm  0.1$
 Alice measures the same 1.5 meter length of string with a 2 meter stick, making one measurement which has an error of  \\(\pm  0.2)\\
 
 ![image](https://github.com/user-attachments/assets/36628081-e8f0-4083-925b-bc9455f659c7)
