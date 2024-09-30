@@ -27,8 +27,8 @@ author:
   bio              : "3rd Year PhD Student with a focus on algorithmic game theory"
   location         : "New York City"
   institution      : "Columbia University"
-  blog email       : "rashidahakim42 AT gmail.com" 
-  academic email   : "rashida.hakim AT columbia.edu"
+  blog_email       : "rashidahakim42 AT gmail.com" 
+  academic_email   : "rashida.hakim AT columbia.edu"
 
   # Academic websites
   #arxiv            : # URL - Update with the correct link to your profile
