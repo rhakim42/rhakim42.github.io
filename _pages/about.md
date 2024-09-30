@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm Rashida Hakim, a third-year PhD student at Columbia University advised by Prof. Christos Papadimitriou and Prof. Mihalis Yannakakis. My interests are broadly in algorithmic game theory, with particular focuses on fairness, repeated games, game dynamics, and matchings. Before joining Columbia, I graduated in 2022 with a Bachelors in Computer Science from Caltech. 
+Hi! I'm Rashida Hakim, a third-year PhD student at Columbia University advised by Prof. Christos Papadimitriou and Prof. Mihalis Yannakakis. My interests are broadly in algorithmic game theory, with particular focuses on fairness, repeated games, game dynamics, and matchings. Before joining Columbia, I graduated in 2022 with a Bachelors in Computer Science from Caltech. 
 
 Publications
 ======
