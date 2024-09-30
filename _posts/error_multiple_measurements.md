@@ -1,6 +1,6 @@
 ---
-title: 'Blog Posts Currently Being Migrated from WordPress'
-date: 2024-09-30
+title: 'Error and Multiple Measurements'
+date: 2016-12-23
 permalink: /posts/2016/12/errors-multiple-measurement/
 tags:
   - physics
