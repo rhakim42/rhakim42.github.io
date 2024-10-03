@@ -18,7 +18,18 @@
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
-    <!-- {% if author.academic_email %}<p class="author__bio">{{ author.academic_email }}</p>{% endif %} -->
+    {% if author.academic_email %}
+          <li class="author__desktop">
+              <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>
+              Academic: <br> {{ author.academic_email }}
+          </li>
+      {% endif %}
+      {% if author.blog_email %}
+          <li class="author__desktop">
+              <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>
+              Blog/Personal: <br> {{ author.blog_email }}
+          </li>
+      {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
@@ -31,18 +42,7 @@
       {% if author.institution %}
         <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.institution }}</li>
       {% endif %}
-      {% if author.academic_email %}
-          <li class="author__desktop">
-              <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>
-              Academic: <br> {{ author.academic_email }}
-          </li>
-      {% endif %}
-      {% if author.blog_email %}
-          <li class="author__desktop">
-              <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>
-              Blog/Personal: <br> {{ author.blog_email }}
-          </li>
-      {% endif %}
+      
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.arxiv %}
