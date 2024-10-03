@@ -19,3 +19,7 @@ Rashida Hakim, Jason Milionis, Christos Papadimitriou, Georgios Piliouras
 Rashida Hakim, Ana-Andreea Stoica, Christos Papadimitriou, Mihalis Yannakakis  
 *To appear at NeurIps 2024*
  
+Contact
+======
+**Academic:** rashida.hakim AT columbia.edu  
+**Personal/Blog:** rashidahakim42 AT gmail.com
