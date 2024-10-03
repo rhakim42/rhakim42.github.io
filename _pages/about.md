@@ -22,4 +22,4 @@ Rashida Hakim, Ana-Andreea Stoica, Christos Papadimitriou, Mihalis Yannakakis
 Contact
 ======
 **Academic:** rashida.hakim AT columbia.edu  
-**Personal/Blog:** rashidahakim42 AT gmail.com
+**Blog/Personal:** rashidahakim42 AT gmail.com
