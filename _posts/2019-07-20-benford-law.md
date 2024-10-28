@@ -1,5 +1,6 @@
 ---
 title: 'Putting #1 First – Deriving Benford’s Law'
+subtitle: 'Looking at when this elusive “first-digit law” does (and doesn’t) apply.'
 date: 2019-07-20
 permalink: /posts/2019/07/benford-law/
 tags:
