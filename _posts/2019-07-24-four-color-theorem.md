@@ -6,7 +6,6 @@ permalink: /posts/2019/07/four-color-theorem/
 tags:
   - math
 --- 
-
 ## 2-Coloring Doodles
 I was playing around with MS Paint recently and I ended up with a drawing that will probably look familiar to anyone who has ever idly messed around with MS Paint.
 
