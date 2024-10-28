@@ -1,3 +1,12 @@
+---
+title: 'Rainbows and Optics'
+date: 2017-01-8
+permalink: /posts/2017/01/rainbows-optics/
+tags:
+  - physics
+  - math
+---
+
 In the optics unit of freshman year physics, we learned that any natural rainbow will form a circle 42^\circ wide, centered at the anti-solar point, like this:
 
 ![image](https://github.com/user-attachments/assets/ed5fed55-a0ef-4e7c-b874-333b334320ba)
