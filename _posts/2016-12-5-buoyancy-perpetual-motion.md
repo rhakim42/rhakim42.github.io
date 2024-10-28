@@ -16,9 +16,9 @@ I talk about the specific machine later on, but much of my confusion about why t
 
 The buoyant force on the right “water ball” is exactly enough to suspend that mass of water, so it makes sense that the buoyant force is equal to the weight of the water displaced. The equation for buoyancy is:
 
- F_{buoyancy} = \rho g V 
+ $F_{buoyancy} = \rho g V$ 
 
-where  \rho  is the mass density of the liquid,  g  is gravity, and  V  is the volume of the object. Remember, since water pressure is so crucial to buoyancy, it is important not to discount it when looking at buoyancy based “perpetual motion”.
+where  $\rho$  is the mass density of the liquid,  $g$  is gravity, and  $V$  is the volume of the object. Remember, since water pressure is so crucial to buoyancy, it is important not to discount it when looking at buoyancy based “perpetual motion”.
 
 Simple “Perpetual Motion” Machine that works based on buoyancy.
 
@@ -28,13 +28,13 @@ Before we get to the machine I was talking about earlier, let’s look at this s
 
 The argument for why this machine rotates is that the ping-pong balls on the right will have a buoyant force acting on them, causing them to rise. The balls on the left only have a gravitational force acting on them and therefore fall. This causes the machine to spin counterclockwise. Looking at only the two sides of the conveyor belt, this argument is pretty convincing, it makes sense for the balls on the left to fall and the balls on the right to float. However, when you look at the top and bottom of the machine the argument starts to fall apart. Any kid who has pushed a rubber duck or bath toy underwater know that it takes work to force a low density object into the water. And that is exactly what is happening at the bottom left of this machine. In fact, we can even prove that the amount of work that the water does on a ping-pong ball in order to get it to the surface is exactly the same as the amount of work the ping-pong ball has to do to get from the air into the water. The net work is zero. This means that once the ping pong ball has entered the water, there is no work left over to actually rotate the machine.
 
- Work = Force \times Distance
- Work_{done \:by \:water \:on \:ball} = F_{buoyancy} \times height 
- F_{buoyancy} = \rho g V 
- Work_{done \:by \:water \:on \:ball} = \rho g V h 
- Work_{done \:by \:ball \:on \:water} = pressure \times V 
- pressure (at \:bottom) = \rho g h 
- Work_{done \:by \:ball \:on \:water} = \rho g V h 
+ $$Work = Force \times Distance$$
+ $$Work_{done\ by\ water\ on\ ball} = F_{buoyancy} \times height$$
+ $$F_{buoyancy} = \rho g V$$
+ $$Work_{done\ by\ water\ on\ ball} = \rho g V h$$ 
+ $$Work_{done\ by\ ball\ on\ water} = pressure \times V$$ 
+ $$pressure (at\ bottom) = \rho g h$$ 
+ $$Work_{done\ by\ ball\ on\ water} = \rho g V h$$ 
 
 More Complicated “Perpetual Motion” Machine:
 Finally we arrive at the machine that inspired this write-up. It appeared in a footnote of Eric Rogers’ book, Physics for Inquiring Minds, and showing how it doesn’t work was left as a challenge for the reader.
@@ -47,12 +47,12 @@ Again, we will try and prove that the work done by the water while the cups are 
 
 Since every cup has an opposite cup connected by a gas tube, it makes sense to think of the work done on a single pair of cups. First, let’s look at the work done by water to raise one left cup and lower the corresponding right cup.
 
- V_{1} - minimum \:volume \:of \:gas \:in \:cup
- V_{2} - maximum \:volume \:of \:gas \:in \:cup
- V = V_{2} - V_{1}
- Work_{done \:by \:water \:on \:pair \:of \:cups} = F_{net \:buoyancy} \times height
-F_{net \:buoyancy} = \rho g V 
-Work_{done \:by \:water \:on \:pair \:of \:cups} = \rho g V h 
+ $$V_{1} - minimum\ volume\ of\ gas\ in\ cup$$
+ $$V_{2} - maximum\ volume\ of\ gas\ in\ cup$$
+ $$V = V_{2} - V_{1}$$
+ $$Work_{done\ by\ water\ on\ pair\ of\ cups} = F_{net\ buoyancy} \times height$$
+ $$F_{net\ buoyancy} = \rho g V$$ 
+ $$Work_{done\ by\ water\ on\ pair\ of\ cups} = \rho g V h$$
 
 This is exactly the same result as we got before (it just took a little more calculation because there were buoyant forces on both sides in this scenario).
 
@@ -63,20 +63,20 @@ Now we have to consider what happens as the cups make the transition from the le
 
 We can see that the bottom piston is moving outwards, against the force of water pressure, while the top piston is moving inwards, with the force of water pressure. It may seem logical that these two forces cancel out and the “crossing-over” has no effect on the rotation of the system. If this were true, we would actually have a perpetual motion machine. The cups would speed up every time they passed the straight sides of the machine and continue moving through the top and bottom. But before you worry about the ramifications of breaking the laws of thermodynamics, remember that you cannot forget pressure differences in buoyancy problems. Also, remember that pressure increases with depth. This means that the bottom piston is expanding in a higher pressure environment than the top piston is contracting. The work, therefore, does not cancel out. In order to transition from one side to another, the pistons must do some work on the water. Now all we have to do is show that the work the pistons do is equal to the work the water did on the cups.
 
- P_{1} - water \:pressure\:at \:top \:of \:machine
- P_{2} - water \:pressure\:at \:bottom \:of \:machine
-A - cross-sectional \:area \:of \:piston 
+ $$P_{1} - water\ pressure\ at\ top\ of\ machine$$
+ $$P_{2} - water\ pressure\ at\ bottom\ of\ machine$$
+ $$A - cross-sectional\ area\ of\ piston$$
 
 ![image](https://github.com/user-attachments/assets/1408f9f8-ff5b-472b-96b6-dfaca263d57f)
 
- F = pressure \times A 
- Work = Force \times distance 
- = pressure \times A \times l 
- = pressure \times V 
-Work_{done\:by\:top\:piston} = P_{1} V
-Work_{done\:by\:bottom\:piston} = P_{2} V
-Work_{done\:by\:pair\:of\:pistons} = (P_{2} - P_{1}) V
- P_{2} - P_{1} = \rho g h
-Work_{done\:by\:pair\:of\:pistons} = \rho g V h
+ $$F = pressure \times A$$
+ $$Work = Force \times distance$$ 
+ $$= pressure \times A \times l$$ 
+ $$= pressure \times V$$ 
+$$Work_{done\ by\ top\ piston} = P_{1} V$$
+$$Work_{done\ by\ bottom\ piston} = P_{2} V$$
+$$Work_{done\ by\ pair\ of\ pistons} = (P_{2} - P_{1}) V$$
+ $$P_{2} - P_{1} = \rho g h$$
+$$Work_{done\ by\ pair\ of\ pistons} = \rho g V h$$
 
 So we have shown that the work done by the water in moving a set of cups to the top and bottom respectively is exactly cancelled by the work the pistons need to do to expand and contract while crossing from one side to the other. No matter how many cups you add or how streamlined you make the cups, the machine will not rotate forever.
