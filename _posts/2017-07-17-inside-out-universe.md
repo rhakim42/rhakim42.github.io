@@ -1,5 +1,6 @@
 ---
 title: 'Inside Out Universe – The (Legitimate) Hollow Earth Theory'
+subtitle: 'Using projective geometry to invert the world as we know it.'
 date: 2017-06-12
 permalink: /posts/2017/06/buffon-needle-noodle/
 tags:
