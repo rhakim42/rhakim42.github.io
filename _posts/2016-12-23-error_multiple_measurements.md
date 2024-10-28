@@ -1,5 +1,6 @@
 ---
 title: 'Error and Multiple Measurements'
+subtitle: 'Your subtitle text here'
 date: 2016-12-23
 permalink: /posts/2016/12/errors-multiple-measurement/
 tags:
