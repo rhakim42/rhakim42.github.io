@@ -15,16 +15,16 @@ A friend recently challenged me with this problem she found at a math competitio
 
 It is actually quite a simple problem, that only requires some knowledge of the Pythagorean theorem, the challenge is recognizing that you have enough information to solve the problem even though you cannot compute the radius of either circle.
 
-Just put in a right triangle, and call the radius of the smaller circle r and the radius of the larger circle R.
+Just put in a right triangle, and call the radius of the smaller circle $r$ and the radius of the larger circle $R$.
 
 ![image](https://github.com/user-attachments/assets/57406571-99e4-46d6-b606-5ad5b8202941)
 
 
-area = \pi R^2 - \pi r^2 
-4^2 + r^2 = R^2 
-16 = R^2 - r^2 
-16\pi = \pi R^2 - \pi r^2 
-area = 16\pi 
+$$area = \pi R^2 - \pi r^2$$
+$$4^2 + r^2 = R^2$$
+$$16 = R^2 - r^2$$
+$$16\pi = \pi R^2 - \pi r^2$$ 
+$$area = 16\pi$$ 
 
 Anyways, I was thinking about this problem as well as the Buffon’s needle problem, when I thought of this (seemingly simple) combination.
 
@@ -43,12 +43,12 @@ Since the circle has infinite rotational symmetry, we can choose one endpoint fo
 ![image](https://github.com/user-attachments/assets/1e73e289-4e6e-4f67-bc1f-da6f045f002a)
 
 
-To get theta in terms of R and r (which is what we want our probability in terms of) we set up a right triangle:
+To get theta in terms of $R$ and $r$ (which is what we want our probability in terms of) we set up a right triangle:
 
-\sin(\theta) = \frac{r}{R} 
-2\theta = 2\arcsin(\frac{r}{R}) 
+$$\sin(\theta) = \frac{r}{R}$$ 
+$$2\theta = 2\arcsin(\frac{r}{R})$$ 
 
-So probability = \frac{2\arcsin(\frac{r}{R})}{180} 
+So $probability = \frac{2\arcsin(\frac{r}{R})}{180}$
 
 Let’s call this Method 1: Endpoint Method, because it relies on the selection of two random endpoints to define a random chord.
 
@@ -56,45 +56,40 @@ I thought this was quite elegant and showed it to my friend the next day at scho
 
 Instead of fixing one endpoint of the chord, she suggested giving it a fixed angle. Looking at one angle is representative just like choosing a particular endpoint, again because of rotational symmetry. So, for instance, we can look only at chords parallel to the y-axis.
 
-
 ![image](https://github.com/user-attachments/assets/17f8e66a-58fb-4ecc-a1a7-217fbe8357d3)
 
-This makes it clear that probability = \frac{r}{R} 
+This makes it clear that $probability = \frac{r}{R}$
 We’ll call this Method 2: Radius Method because we choose a random radius for our chords to be perpendicular to.
 
-At first, I thought these two solutions must be equal and that \frac{2\arcsin(\frac{r}{R})}{180} = \frac{r}{R}  must be a mathematical identity. But if you plug in some numbers, say R = 15 and r = 3, you realize that these are most definitely not equal.
+At first, I thought these two solutions must be equal and that $\frac{2\arcsin(\frac{r}{R})}{180} = \frac{r}{R}$ must be a mathematical identity. But if you plug in some numbers, say $R = 15$ and $r = 3$, you realize that these are most definitely not equal.
 
-\frac{2\arcsin(\frac{3}{15})}{180} \approx 0.064 \neq \frac{3}{15} \approx 0.20 
+$$\frac{2\arcsin(\frac{3}{15})}{180} \approx 0.064 \neq \frac{3}{15} \approx 0.20$$ 
 While trying to reconcile this, I came up with yet another method to solve the problem which yielded yet another answer!
 
 This method utilizes the fact that a chord passes through the inner circle if and only if the chord’s midpoint is in the inner circle.
 
-
 ![image](https://github.com/user-attachments/assets/99b2721e-c918-470e-9d2f-2376cf67fbf2)
-
 
 Also, except for chords with a midpoint in the exact center of the circle (randomly choosing the center has a probability of zero and can be ignored) any chord can be defined by its midpoint by drawing the radius passing through the midpoint and the chord as perpendicular.
 
 ![image](https://github.com/user-attachments/assets/34dcc78e-a744-496a-aada-54d0719240e9)
 
-So we  can generate random chords by selecting random midpoints and a chord will pass through the center circle if its midpoint is in the circle. Therefore, the probability of a chord passing through the center circle should be the ratios of the areas of the circles or $latex probability = \frac{r^2}{R^2} &s=2$.
+So we  can generate random chords by selecting random midpoints and a chord will pass through the center circle if its midpoint is in the circle. Therefore, the probability of a chord passing through the center circle should be the ratios of the areas of the circles or $probability = \frac{r^2}{R^2}$.
 
 We’ll call this Method 3: Midpoint Method, for fairly obvious reasons.
 
 Someone pointed out to me that each of the three methods relied on a different way of randomly generating a chord:
 
-Method 1: Specify two random points on the large circle’s perimeter. This can be done by randomly choosing two angles \theta_1  and \theta_2  between 0 and 360 degrees.
-
+Method 1: Specify two random points on the large circle’s perimeter. This can be done by randomly choosing two angles $\theta_1$ and $\theta_2$ between 0 and 360 degrees.
 
 ![image](https://github.com/user-attachments/assets/943727cc-967f-4a31-aac0-895b673eefd1)
 
-
-Method 2: Specify a random point on the large circle’s perimeter (to determine a radius) and a random length along that radius. This can be done by randomly choosing an angle \theta_1  from 0 to 360 degrees and a length L from 0 to R.
+Method 2: Specify a random point on the large circle’s perimeter (to determine a radius) and a random length along that radius. This can be done by randomly choosing an angle $\theta_1$  from 0 to 360 degrees and a length $L$ from 0 to $R$.
 
 
 ![image](https://github.com/user-attachments/assets/53f1aec3-0adc-495b-82b3-a42a2c7812ea)
 
-Method 3: Specify a random point within the large circle. This can be done by choosing a random x and y coordinate from -R to R and selecting again if (x,y) falls outside the circle.
+Method 3: Specify a random point within the large circle. This can be done by choosing a random $x$ and $y$ coordinate from $-R$ to $R$ and selecting again if $(x,y)$ falls outside the circle.
 
 ![image](https://github.com/user-attachments/assets/40bd1863-6abc-4c9a-9001-7b8af978cfea)
 
