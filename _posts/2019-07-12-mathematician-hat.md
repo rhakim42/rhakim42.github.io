@@ -1,5 +1,5 @@
 ---
-title: 'Mathematicians Many Hats'
+title: "Mathematicians' Many Hats"
 date: 2019-07-12
 permalink: /posts/2019/07/mathematician-hats/
 tags:
