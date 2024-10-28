@@ -1,3 +1,12 @@
+---
+title: 'Buoyancy and Perpetual Motion'
+date: 2016-12-5
+permalink: /posts/2016/12/buoyancy-perpetual-motion/
+tags:
+  - physics
+  - math
+---
+
 Recently, I was introduced to a perpetual motion machine that appeared, at first glance, to be workable. In fact, at the end of nearly an hour of discussion with a physics teacher and some other students, I was convinced it would work. It relied on buoyancy to supply seemingly limitless, free kinetic energy. Many of the arguments against it could be easily be eliminated by making the machine larger or improving the quality of the parts. Alas, upon further examination I realized that in this machine (just like every perpetual motion machine) there is a fundamental flaw that cannot be overcome.
 
 I talk about the specific machine later on, but much of my confusion about why the machine didn’t work stemmed from a misunderstanding of buoyancy. Buoyancy is not free energy at all, there is nothing magical about it. It is caused by the simple fact that water pressure increases with depth. This is best explained in a picture:
