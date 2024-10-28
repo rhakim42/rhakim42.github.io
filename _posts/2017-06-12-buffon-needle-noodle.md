@@ -22,33 +22,33 @@ Now we have to determine the range of angles that the needle can fall towards an
 ![image](https://github.com/user-attachments/assets/70d66863-d626-40bc-8c33-fe950f50cb5f)
 
 
-\cos(\theta) = x
-\theta = \arccos(x)
+$$\cos(\theta) = x
+\theta = \arccos(x)$$
 
-2\theta is the size of the angle in which the needle can fall and intersect the line, and the total angle is 180 degrees or \pi radians. The probability of crossing the line for each value of x is therefore \frac{2\arccos(x)}{\pi} . Since we need to add these probabilities for each possible value of x, we integrate this function from 0 to 1.
+$2\theta$ is the size of the angle in which the needle can fall and intersect the line, and the total angle is 180 degrees or $\pi$ radians. The probability of crossing the line for each value of $x$ is therefore $\frac{2\arccos(x)}{\pi}$. Since we need to add these probabilities for each possible value of $x$, we integrate this function from 0 to 1.
 
-\int_{0}^{1}\frac{2\arccos(x)}{\pi}
+$$\int_{0}^{1}\frac{2\arccos(x)}{\pi}$$
 
 ![image](https://github.com/user-attachments/assets/d0ab0704-371d-449f-ba41-ab9c12459ed1)
 
 We can use the integral of \arccos(x), see proof here.
 
-\int\arccos(x) = x \arccos(x) + \sqrt{1 - x^2} + c
+$$\int\arccos(x) = x \arccos(x) + \sqrt{1 - x^2} + c$$
 
 Then with some very basic arithmetic (which I leave to the reader because it’s fairly unimportant), we find that
 
-\frac{2\arccos(x)}{\pi} = \frac{2}{\pi}
+$$\frac{2\arccos(x)}{\pi} = \frac{2}{\pi}$$
 
-So the probability that a needle of length one will intersect one of the lines is \frac{2}{\pi} or about 0.64.
+So the probability that a needle of length one will intersect one of the lines is $\frac{2}{\pi}$ or about 0.64.
 
-This property is commonly used as a neat demonstration to approximate \pi. Simply drop some needles (or other straight object, angel-hair pasta is a common choice) onto a field of evenly spaced lines and set the probability you get experimentally equal to \frac{2}{\pi}. If you would like to do this demonstration online, you can try here.
+This property is commonly used as a neat demonstration to approximate $\pi$. Simply drop some needles (or other straight object, angel-hair pasta is a common choice) onto a field of evenly spaced lines and set the probability you get experimentally equal to $\frac{2}{\pi}$. If you would like to do this demonstration online, you can try here.
 
-It tends to surprise students because we are only dealing with straight lines and straight needles, and \pi, usually associated with circles, shows up. However, doing the math makes it quite clear where the trigonometry comes in; it’s a result of the 360 degree angle the needle can fall in after touching the field.
+It tends to surprise students because we are only dealing with straight lines and straight needles, and $\pi$, usually associated with circles, shows up. However, doing the math makes it quite clear where the trigonometry comes in; it’s a result of the 360 degree angle the needle can fall in after touching the field.
 
 The problem doesn’t need to have a needle of length 1. Once we get into longer lines, more than one intersection becomes possible and even probable, so we should stop talking about probability and start calling it “expected number of intersections”. Expected value is always additive so it grows linearly with length. So we can take dropping a needle of length 2 as having the same expected value as dropping 2 needles of length 1. Curves can be thought of as very short straight line segments arranged end to end, so we can use the same idea to determine the expected number of intersections for a curve. When you are working with curves, the problem in renamed Buffon’s noodle, but doesn’t change much outside of that.
-The formula that becomes of interest therefore is: “expected intersections” =  \frac{2}{\pi} \times l where l is the length of the line or curve.
+The formula that becomes of interest therefore is: “expected intersections” =  $\frac{2}{\pi} \times l$ where $l$ is the length of the line or curve.
 
-I got curious as to what would be the length of a curve that had exactly 1 or 2 expected intersections would be and quickly found that it would be \frac{\pi}{2} and \pi. That second value isn’t surprising at all because it is the perimeter of a circle of diameter 1, which is guaranteed to intersect the field of parallel lines exactly twice.
+I got curious as to what would be the length of a curve that had exactly 1 or 2 expected intersections would be and quickly found that it would be $\frac{\pi}{2}$ and $\pi$. That second value isn’t surprising at all because it is the perimeter of a circle of diameter 1, which is guaranteed to intersect the field of parallel lines exactly twice.
 
 ![image](https://github.com/user-attachments/assets/cf51e964-b6c8-4e61-bfc4-3fd980f616b1)
 
