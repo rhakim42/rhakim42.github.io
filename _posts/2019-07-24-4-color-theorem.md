@@ -10,6 +10,7 @@ A proof that went undone for 80 years – we’ll go from maps, to planar graphs
 
 2-Coloring Doodles
 I was playing around with MS Paint recently and I ended up with a drawing that will probably look familiar to anyone who has ever idly messed around with MS Paint.
+![image](https://github.com/user-attachments/assets/cd71913f-269c-4f51-a32c-68a313868c4d)
 
 
 In addition to the nostalgia of remembering digital doodles from elementary school, I had another thought about this drawing. I wondered if it could always be colored with 2 colors “correctly” – such that colors only touched at corners (like a checkerboard). When I colored the drawings in using the Fill tool, the correct coloring naturally falls into place, but it is not entirely clear that should always happen. I could imagine a situation where it becomes unavoidable to color two adjacent regions with the same color (or to add a third color).
@@ -28,6 +29,8 @@ With a little work (try it!), we can generalize this result to patterns made up 
 
 The condition on 2-colorable “doodles” is that the lines can only overlap at single points. This means that no two lines can share a segment of non-zero length. In addition, only two lines can intersect at any single point.
 
+![image](https://github.com/user-attachments/assets/4d7a7bd8-e21d-4d0e-87bf-dc46478c3e2a)
+
 Moving onto Maps
 Of course, the logical next question is: what if we made drawings (like those in coloring books) that did allow lines to have overlapping segments? How many colors would we need to color such a pattern “correctly” a.k.a. such that no two adjacent regions have the same color? We will call these patterns “maps” because cartographers usually try to preserve this property to prevent confusion between neighboring countries, states, provinces, or regions.
 
@@ -42,6 +45,8 @@ By drawing a couple pictures, we can see that at minimum, we need 4 colors. This
 A map that immediately requires 4 colors
 
 But this by itself does not imply that all maps can be colored with 4 colors. It is easy to imagine a more intricate map where not being able to use the same color in two adjacent regions would eventually force a fifth or even sixth color.
+
+![image](https://github.com/user-attachments/assets/44efb6b9-f009-498a-8900-ca7420fb8367)
 
 
 If we 4 color the map on the left, and then add the encircling region, the map now requires 5 colors (as shown on the right). We can recolor the map on the right using 4 colors, but it is nontrivial to show that is always possible.
@@ -58,6 +63,7 @@ Since the 4-color theorem is rather difficult to prove, let us start with the su
 
 We can apply theorems about planar graphs in order to prove the 6-colorability of all maps. One theorem is that every planar graph with v \geq 3 vertices and e edges, e \leq  3v - 6 (for a proof, see the Testing for Planarity section on this page). We can use this to prove that every planar configuration will have at least one vertex that connects to \leq 5 edges.
 
+![image](https://github.com/user-attachments/assets/1a945ae4-662b-456f-9efc-55e7189b5931)
 
 At least one of the vertices in any planar graph will look like one of the above vertices (shown in red). In other words, at least one vertex in a planar graph has less than or equal to 5 edges connected to it.
 We will use proof by contradiction, so assume that every vertex in a graph connects to \geq 6 edges. Every edge connects to exactly 2 vertices, so e \geq \frac{6}{2}v. From the theorem above we know e \leq  3v - 6, so therefore 3v \leq  3v - 6 which is an obvious contradiction.
@@ -75,6 +81,7 @@ The first attempted proof of the 4-color theorem appeared in 1879 by Alfred Kemp
 
 From our proof of the 6-color theorem, we can realize that the only case that does not directly generalize to 5-colors is the case where the vertex we remove has 5 edges and connects to 5 differently colored vertices (since there will be no leftover color to use on the central vertex). So consider a vertex connected to 5 other vertices each with a distinct color. The method of Kempe chains (illustrated below) then allows for the 5 nodes surrounding our vertex to be colored with 4 colors, leaving the fifth for the central vertex.
 
+![image](https://github.com/user-attachments/assets/897bdc19-30c5-4adf-bcf0-157068dcc678)
 
 Recoloring a subgraph using the method of Kempe chains. The colors may not be in this order, but the basic idea is always the same.
 Kempe cleverly used the method of Kempe chains to prove the 4-color theorem – or so he and the mathematical community thought. The proof appeared valid for 11 years until Percy John Heawood published a paper pointing out that in a particular subcase, Kempe’s method will not yield a 4-coloring (see here for more detail). Kempe tried to revise his proof, but was unable to do so. Note: The proof of the 5-color theorem using Kempe chains that we showed above is still valid.
@@ -86,6 +93,7 @@ The idea of the proof is to first come up with a set of configurations (which ar
 
 While this sounds complex due to the terminology, this is exactly what we did for the proof of the 5 and 6-color theorems. Our unavoidable set of configurations contained a single vertex with 1, 2, 3, 4, and 5 connecting edges.
 
+![image](https://github.com/user-attachments/assets/b9110868-20cd-4d32-b800-dd502a249405)
 
 Unavoidable set of configurations used in the proof of the 5 and 6-color theorems
 Then we showed that each of these 5 configurations was reducible if we had 6-colors (just using common sense) or if we had 5-colors (using the method of Kempe chains). This proved there could be no minimal counterexample to the theorems, and therefore that the theorems were true.
@@ -98,6 +106,7 @@ Each of these 1,936 unavoidable configurations had to be individually checked by
 
 Appel and Hakken’s proof was the subject of some controversy because its extensive use of computational strength meant that it was not human-verifiable. Mathematicians worried that there could be some error in the software used to check for reducibility, which would render the proof invalid. Even the “human-verifiable” piece of the proof (the discharging procedure) was extremely complicated (400 pages of calculations!) and therefore impractical to actually check in its entirety. However, other software was later used to confirm the complete reducibility of the unavoidable set generated by Appel and Hakken. Smaller completely reducible unavoidable sets (as small as 633 configurations) have also been generated and checked. So the 4-color theorem has been proven beyond a doubt.
 
+![image](https://github.com/user-attachments/assets/cd14ab7e-173d-4833-840f-e0d4a1f20f06)
 
 Some of the configurations in the unavoidable set of 633 found by Robertson, N. et al.
 Still, a level of dissatisfaction about the 4-color theorem remains in the mathematical community. There is lingering doubt that what Appel and Hakken did constitutes a “real” proof, since no human could ever completely understand every computation involved (there simply isn’t enough time in a single person’s life). Part of the problem is that the proof is rather ugly to the human eye: nearly 2,000 cases that have to be each checked individually?! The proofs of mathematical theorems are so often beautiful places of insight. By comparison, the complicated piece of calculation that is Appel and Hakken’s proof appears woefully inelegant.
@@ -111,8 +120,10 @@ It can be a rather fun time to try to “disprove” the 4-color theorem on your
 
 ![image](https://github.com/user-attachments/assets/e492dc5b-c5b5-45ce-872d-c36a22837d3b)
 
+![image](https://github.com/user-attachments/assets/b14345e8-0657-4ca7-a8b3-8eef5955116b)
 
 If those weren’t enough of a challenge, try 4-coloring this puzzle. (Disclaimer: It took me 4 tries before I could do it)
+![image](https://github.com/user-attachments/assets/89f82eef-db20-4992-9870-2fb764998e36)
 
 
 Martin Gardner published this image as a “disproof” of the 4-Color Theorem in an April 1st edition of Scientific American (1975). William McGregor, the graph theorist who created the map, gave Gardner permission to use it in his little prank. Solution.
