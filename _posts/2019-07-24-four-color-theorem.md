@@ -1,11 +1,12 @@
 ---
-title: 'A (Detailed) Look at the Four Color Theorem'
-subtitle: "A proof that went undone for eighty years. We’ll go from maps, to planar graphs, to Kempe chains, to the final computer assisted solution."
-date: 2019-07-24
-permalink: /posts/2019/07/four-color-theorem/
+title: 'Inside Out Universe – The (Legitimate) Hollow Earth Theory'
+subtitle: 'Using projective geometry to invert the world as we know it.'
+date: 2017-06-12
+permalink: /posts/2017/06/buffon-needle-noodle/
 tags:
   - math
---- 
+  - physics
+---
 
 ## 2-Coloring Doodles
 I was playing around with MS Paint recently and I ended up with a drawing that will probably look familiar to anyone who has ever idly messed around with MS Paint.
