@@ -7,7 +7,7 @@ tags:
   - math
 ---
 
-A Relatively Easy Riddle:
+## A Relatively Easy Riddle:
 Quite a while ago, I was introduced to a rather fun little brainteaser centering around colors of hats. The problem goes like this:
 
 There is a line of 100 mathematicians, each positioned so that he can see all the hats in front of him but none of the hats behind him (nor his own hat). Each of the mathematicians is randomly assigned a colored hat, which is either red or blue. Note that there do not have to be exactly 50 of each color (since each mathematician’s hat color is independent of the others). Now the mathematicians are asked to guess the color of their own hat, starting from the back of the line and everyone can hear the guesses. Assuming that they are allowed to confer beforehand to discuss a strategy, what is the maximum number of mathematicians who can guess correctly?
@@ -35,20 +35,23 @@ So the second mathematician can get his own hat color right. Now, the next mathe
 
 
 Since every mathematician knows the parity (whether it is odd or even) of 3 numbers in this formula, they can figure out the parity of the 4th number. This means they know whether they are wearing 1 red hat or 0 red hats (meaning their hat is blue).
-Now to Infinity!
+## Now to Infinity!
 Much more recently, at Caltech, I was introduced to variants of this riddle that make it significantly more interesting. The first involves replacing the line of 100 mathematicians with a countably infinite number of mathematicians. Now how many can guess their hat color right? This riddle requires making some strange assumptions, but it’s worth it because it dives into some really interesting math. So let’s assume that our mathematicians have infinite memory and can compare two infinite sequences in their “entirety” – obviously impossible for any human but our mathematicians are hardly human (is anyone who voluntarily puts themselves through a math PhD?).
 
-An Aside About Equivalence Classes
+### An Aside About Equivalence Classes
 Now to solve this problem we need something called equivalence classes. Equivalence classes are a partition of a set of objects (in this case, sequences of hat colors) such that every element in the equivalence class is “equal” to every other element. However, equality is not necessarily defined by our standard, intuitive, definition. It can be defined by any equivalence relation which preserves reflexivity, symmetry, and transitivity.
 
-This seems confusing but can be clarified by a familiar example: fractions. One way of defining a fraction is as a pair of integers (a,b) such that b is non-zero. In more traditional notation, (a,b) means the same thing as   \frac{a}{b}. Now our equivalence relation on fractions will be as follows (the ~ indicates equivalence relation): (a_1, b_1) \sim (a_2, b_2)  if and only if a_1\times b_2 = a_2\times b_1 (the = sign represents standard equality). This makes sense because we can “cross-multiply” with fractions and preserve equality. Now that we have defined an equivalence relation, an example of an equivalence class for fractions would be all the fractions “equal” to (1, 2) such as (2, 4), (3, 6), (18,36), (510, 1020). These pairs of numbers are not really equal (we wouldn’t say (1,2) = (18, 36)) but with the correct equivalence relation defined, we can put them in the same equivalence class. Going into detail about the reflexivity, symmetry, and transitivity properties that any equivalence relation must have is a bit out of scope for this post, but I will give quick definitions here:
+This seems confusing but can be clarified by a familiar example: fractions. One way of defining a fraction is as a pair of integers (a,b) such that b is non-zero. In more traditional notation, $(a,b)$ means the same thing as $\frac{a}{b}$. Now our equivalence relation on fractions will be as follows (the ~ indicates equivalence relation): $(a_1, b_1) \sim (a_2, b_2)$  if and only if $a_1\times b_2 = a_2\times b_1$ (the = sign represents standard equality). This makes sense because we can “cross-multiply” with fractions and preserve equality. Now that we have defined an equivalence relation, an example of an equivalence class for fractions would be all the fractions “equal” to (1, 2) such as (2, 4), (3, 6), (18,36), (510, 1020). These pairs of numbers are not really equal (we wouldn’t say (1,2) = (18, 36)) but with the correct equivalence relation defined, we can put them in the same equivalence class. Going into detail about the reflexivity, symmetry, and transitivity properties that any equivalence relation must have is a bit out of scope for this post, but I will give quick definitions here:
 
-Reflexivity: a \sim a
-Symmetry: if a \sim b then b \sim a
-Transitivity: if a \sim b and b \sim c then a \sim c
+Reflexivity: $a \sim a$
+
+Symmetry: if $a \sim b$ then $b \sim a$
+
+Transitivity: if $a \sim b$ and $b \sim c$ then $a \sim c$
+
 If you would like, try to verify that our equivalence relation for fractions satisfies these three properties (it should be very easy to do).
 
-Back to the Problem 🙂
+## Back to the Problem 🙂
 Okay, now that we have some understanding of equivalence classes, we can solve the infinite case in a very similar manner to how we solved the 100 mathematician case.
 
 What we want to do is reduce this infinite case to the finite case – which we know how to solve (we did it above). We can do this by dividing up the set of sequences of hat colors into equivalence classes using the following equivalence relation: two sequences are considered equal if they differ only at a finite number of positions. (If you would like, try to verify reflexivity, symmetry, transitivity on this equivalence relation). Now, the mathematicians must select a representative from each equivalence class. A representative is a single element from a particular equivalence class (any element). This element, by definition of equivalence classes, is “equal” to every other element in that equivalence class.
@@ -61,10 +64,10 @@ So in this new problem, the job of the mathematicians in their “conferral” p
 
 Once the mathematicians are arranged in a line, the first mathematician has to compare the sequence he sees with the set of representatives that were collectively decided on. Because of what we said earlier, the sequence of hat colors must fall into one and only one equivalence class. This means it differs from one (and only one) representative at a finite number of positions (it differs from the rest of the representatives at an infinite umber of positions). The first mathematician must figure out what this representative is and count the number of positions where the sequence differs from the representative. If this number is even, he’ll call out red (like before) and if it’s odd, he’ll call out blue. Every subsequent mathematician can now figure out their hat color using the same exact procedure as the finite case. However, instead of asking whether their hat is red or blue, they should ask whether their hat color differs from the representative sequence or not. From this (and from having collectively decided on a representative sequence beforehand), every mathematician except the first can guess their hat color correctly. Pretty cool!
 
-Deaf Mathematicians and the Axiom of Choice
+## Deaf Mathematicians and the Axiom of Choice
 Now there is something weird about what we did in the first infinite case, which becomes clear when we consider another variant. In this variant, we also have an infinite line of mathematicians, but they’re all deaf. So no information is being carried forward when the mathematicians say their own hat color. Now, suppose the mathematicians create the set of representative sequences like we discussed they should do in the previous case. If they simply say the color that is at their position from the equivalent representative sequence, only a finite number of mathematicians will get their hat color wrong. This is because the sequence only differs from the representative at a finite number of positions (by our definition of equivalence).
 
-So even in the case where each mathematician has no additional information from hearing the previous answers, they can guess their hat colors more accurately (only finite errors) than random guessing (almost definitely infinite errors). This doesn’t really make a lot of sense. No mathematician has any usable information about what their own hat color is, because no one who actually can see their hat has any mechanism of communicating with them. How can the mathematicians then do better than \frac{1}{2} getting the answer right?
+So even in the case where each mathematician has no additional information from hearing the previous answers, they can guess their hat colors more accurately (only finite errors) than random guessing (almost definitely infinite errors). This doesn’t really make a lot of sense. No mathematician has any usable information about what their own hat color is, because no one who actually can see their hat has any mechanism of communicating with them. How can the mathematicians then do better than $\frac{1}{2}$ getting the answer right?
 
 The answer (or at least how the weirdness is introduced) is that implicit in our strategy for the mathematicians is the axiom of choice. The axiom of choice says something fairly simple: that for any non-empty set, we can choose one element from it. We need to make this assumption because our mathematicians need to collectively decide on a representative element from each equivalence class (set) of hat color sequences. The axiom of choice is key to our strategy in the infinite case. But this seems like a rather tame assumption – isn’t it obvious that if you have a box with things in it, you can reach in and grab one?
 
