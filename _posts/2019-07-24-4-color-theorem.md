@@ -9,8 +9,8 @@ tags:
 
 ## 2-Coloring Doodles
 I was playing around with MS Paint recently and I ended up with a drawing that will probably look familiar to anyone who has ever idly messed around with MS Paint.
-![image](https://github.com/user-attachments/assets/cd71913f-269c-4f51-a32c-68a313868c4d)
 
+![image](https://github.com/user-attachments/assets/cd71913f-269c-4f51-a32c-68a313868c4d)
 
 In addition to the nostalgia of remembering digital doodles from elementary school, I had another thought about this drawing. I wondered if it could always be colored with 2 colors “correctly” – such that colors only touched at corners (like a checkerboard). When I colored the drawings in using the Fill tool, the correct coloring naturally falls into place, but it is not entirely clear that should always happen. I could imagine a situation where it becomes unavoidable to color two adjacent regions with the same color (or to add a third color).
 
@@ -30,7 +30,8 @@ The condition on 2-colorable “doodles” is that the lines can only overlap at
 
 ![image](https://github.com/user-attachments/assets/4d7a7bd8-e21d-4d0e-87bf-dc46478c3e2a)
 
-Moving onto Maps
+## Moving onto Maps
+
 Of course, the logical next question is: what if we made drawings (like those in coloring books) that did allow lines to have overlapping segments? How many colors would we need to color such a pattern “correctly” a.k.a. such that no two adjacent regions have the same color? We will call these patterns “maps” because cartographers usually try to preserve this property to prevent confusion between neighboring countries, states, provinces, or regions.
 
 ![image](https://github.com/user-attachments/assets/d3178447-0b3a-4c79-92fd-81959d14a72e)
@@ -40,7 +41,9 @@ Source: Washington Post
 
 
 By drawing a couple pictures, we can see that at minimum, we need 4 colors. This is because we can draw a map with 4 regions such that every region shares a side with all 3 of the others. This map clearly requires 4 colors. However, I was not able to draw a map with 5 regions such that every region shared a side with all 4 others.
+
 ![image](https://github.com/user-attachments/assets/941130ab-5a83-4de9-9fcf-673f13d9a70d)
+
 A map that immediately requires 4 colors
 
 But this by itself does not imply that all maps can be colored with 4 colors. It is easy to imagine a more intricate map where not being able to use the same color in two adjacent regions would eventually force a fifth or even sixth color.
@@ -51,13 +54,14 @@ But this by itself does not imply that all maps can be colored with 4 colors. It
 If we 4 color the map on the left, and then add the encircling region, the map now requires 5 colors (as shown on the right). We can recolor the map on the right using 4 colors, but it is nontrivial to show that is always possible.
 Maps → Graphs
 This problem can be simplified somewhat by taking maps, which contain weird shapes of varying sizes, and translating them into “graphs” which only contain nodes and connecting edges. Every region will get a node, and if two regions share a side, then their nodes will be connected with an edge. This removes a lot of the complexity of the individual shapes involved in the maps, but preserves all the information we need to color them (because, based on the edges, we know which nodes cannot be the same color).
+
 ![image](https://github.com/user-attachments/assets/1987d427-82f0-4324-bcd3-d9a3089b6e3f)
 
 
 Translating two maps that initially appear distinct into the same graph. This means that if one map can be 4-colored, so can the other. Notice that Graph 2 appears non-planar at first (lines cross) but since it can be “untangled” it is actually a planar graph.
 All possible maps will lead to “planar” graphs, meaning that they can be drawn without the lines crossing (curved lines are allowed). Non-planar configurations do not correspond to valid maps, which makes a kind of sense if you consider the edges in a configuration to be analogous to regions.
 
-Proof of the 6-Color theorem
+## Proof of the 6-Color theorem
 Since the 4-color theorem is rather difficult to prove, let us start with the substantially easier (and weaker) 6-color theorem: no map requires more than 6 colors to ensure that no two adjacent regions have the same color.
 
 We can apply theorems about planar graphs in order to prove the 6-colorability of all maps. One theorem is that every planar graph with v \geq 3 vertices and e edges, e \leq  3v - 6 (for a proof, see the Testing for Planarity section on this page). We can use this to prove that every planar configuration will have at least one vertex that connects to \leq 5 edges.
@@ -75,7 +79,8 @@ Suppose that this minimal criminal has a vertex A connected to 5 or fewer edges 
 
 Any “minimal criminal” planar graph requiring 7 colors can be recolored with 6 colors using this method. Therefore, any planar graph can be colored using 6 colors (you will never need 7 or more).
 
-Attempting to Prove the 4-Color Theorem: A Proof of the 5-Color Theorem
+## Attempting to Prove the 4-Color Theorem: A Proof of the 5-Color Theorem
+
 The first attempted proof of the 4-color theorem appeared in 1879 by Alfred Kempe. The proof was similar to our proof of the 6-color theorem, but the cases where the node that was removed had 4 or 5 vertices had to be examined in more detail. Kempe came up with a method that involved exchanging sequences of alternating colors called Kempe chains. In order, to give you a better understanding of Kempe chains, I will explain how they can be used to prove the 5-color theorem.
 
 From our proof of the 6-color theorem, we can realize that the only case that does not directly generalize to 5-colors is the case where the vertex we remove has 5 edges and connects to 5 differently colored vertices (since there will be no leftover color to use on the central vertex). So consider a vertex connected to 5 other vertices each with a distinct color. The method of Kempe chains (illustrated below) then allows for the 5 nodes surrounding our vertex to be colored with 4 colors, leaving the fifth for the central vertex.
@@ -112,7 +117,7 @@ Still, a level of dissatisfaction about the 4-color theorem remains in the mathe
 
 However, there is something compelling about the fact that this simply-stated theorem remains unprovable without computer aid. Perhaps it suggests that we are reaching a point in mathematics where the complexity of our theorems and conjectures exceeds our personal computational abilities. And isn’t it exciting that we now have the tools (amazingly powerful computers) to take that next step? Computer assisted proofs are here to stay – examples include sphere packing, optimal Rubik’s cube solving, and coloring the Pythagorean triples – and our understanding of what a “proof” is will likely expand to accomodate.
 
-Puzzles 🙂
+## Puzzles 🙂
 It can be a rather fun time to try to “disprove” the 4-color theorem on your own by drawing some maps that are difficult to 4-color. People on StackExchange (1, 2, 3) thought the following maps were counterexamples to the 4-color theorem, can you color them successfully? (Note: You can copy the images into MS Paint and use the Fill Tool to color)
 
 ![image](https://github.com/user-attachments/assets/0a6a2e28-057f-4713-b993-54d8a2b5937f)
@@ -122,8 +127,8 @@ It can be a rather fun time to try to “disprove” the 4-color theorem on your
 ![image](https://github.com/user-attachments/assets/b14345e8-0657-4ca7-a8b3-8eef5955116b)
 
 If those weren’t enough of a challenge, try 4-coloring this puzzle. (Disclaimer: It took me 4 tries before I could do it)
-![image](https://github.com/user-attachments/assets/89f82eef-db20-4992-9870-2fb764998e36)
 
+![image](https://github.com/user-attachments/assets/89f82eef-db20-4992-9870-2fb764998e36)
 
 Martin Gardner published this image as a “disproof” of the 4-Color Theorem in an April 1st edition of Scientific American (1975). William McGregor, the graph theorist who created the map, gave Gardner permission to use it in his little prank. Solution.
 If you enjoy doing these kinds of puzzles (I certainly did) then check out the FourColor app (for iOS) which has a dozen or so more.
