@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Rashida Hakim / iRashida"
+title                    : "iRashida"
 title_separator          : "-"
 name                     : &name "Rashida Hakim"
 description              : &description "Rashida's Academic Website and Blog"
