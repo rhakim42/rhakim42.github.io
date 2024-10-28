@@ -13,8 +13,6 @@ Simple “Perpetual Motion” Machine that works based on buoyancy.
 
 Before we get to the machine I was talking about earlier, let’s look at this simpler machine. (I don’t know whose original idea this was but I have seen several iterations of it online).
 
-
-
 The argument for why this machine rotates is that the ping-pong balls on the right will have a buoyant force acting on them, causing them to rise. The balls on the left only have a gravitational force acting on them and therefore fall. This causes the machine to spin counterclockwise. Looking at only the two sides of the conveyor belt, this argument is pretty convincing, it makes sense for the balls on the left to fall and the balls on the right to float. However, when you look at the top and bottom of the machine the argument starts to fall apart. Any kid who has pushed a rubber duck or bath toy underwater know that it takes work to force a low density object into the water. And that is exactly what is happening at the bottom left of this machine. In fact, we can even prove that the amount of work that the water does on a ping-pong ball in order to get it to the surface is exactly the same as the amount of work the ping-pong ball has to do to get from the air into the water. The net work is zero. This means that once the ping pong ball has entered the water, there is no work left over to actually rotate the machine.
 
  Work = Force \times Distance
