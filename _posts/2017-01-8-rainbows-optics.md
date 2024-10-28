@@ -1,5 +1,6 @@
 ---
 title: 'Rainbows and Optics'
+subtitle: 'Finding the reason for a rainbow by analyzing a single spherical drop of water.'
 date: 2017-01-8
 permalink: /posts/2017/01/rainbows-optics/
 tags:
