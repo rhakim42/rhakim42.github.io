@@ -43,8 +43,11 @@ The area under this plane can be calculated by finding the volume of 2 right tet
 So:  
 
 $$v = \frac{(2)(2)(2)}{6}$$
+
 $$2v = 8/3$$
+
 expected value = $\frac{8}{3} /4$  (4 is the area of the base of the cube)  
+
 expected value = $\frac{2}{3}$
 
 So the average error in Christina’s measurement is 0.0667 compared to Alice’s average error of 0.1! Each of Christina’s measurements could be up to 0.15 off, and her measurement would be equal to or better than Alice’s in terms of accuracy. You can do the same thing to determine expected error if each of Christina’s measurements had a different error (for example, if her first measurement was accurate within $\pm 0.125$ while her second was only accurate to within $\pm 0.175$) by drawing distorted tetrahedrons and calculating their volumes. But what if Christina took 3 measurements? Or 10? There is no way we can imagine and calculate volumes in 11 dimensional space. To do this problem, we have to recognize that what we just did above was calculate a double integral.
