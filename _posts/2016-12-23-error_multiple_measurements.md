@@ -1,6 +1,6 @@
 ---
 title: 'Error and Multiple Measurements'
-subtitle: 'Your subtitle text here'
+subtitle: 'Mathematically quantifying error a.k.a. being right about how wrong you are.'
 date: 2016-12-23
 permalink: /posts/2016/12/errors-multiple-measurement/
 tags:
