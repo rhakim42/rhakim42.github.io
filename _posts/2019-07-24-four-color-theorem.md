@@ -1,8 +1,8 @@
 ---
-title: 'A (Detailed) Look at the 4 Color Theorem'
-subtitle: "A proof that went undone for 80 years. We’ll go from maps, to planar graphs, to Kempe chains, to the final computer assisted solution."
+title: 'A (Detailed) Look at the Four Color Theorem'
+subtitle: "A proof that went undone for eighty years. We’ll go from maps, to planar graphs, to Kempe chains, to the final computer assisted solution."
 date: 2019-07-24
-permalink: /posts/2019/07/4-color-theorem/
+permalink: /posts/2019/07/four-color-theorem/
 tags:
   - math
 --- 
