@@ -1,6 +1,6 @@
 ---
 title: 'A (Detailed) Look at the Four Color Theorem'
-subtitle: 'Using projective geometry to invert the world as we know it.'
+subtitle: 'A proof that went undone for eighty years. We’ll go from maps, to planar graphs, to Kempe chains, to the final computer assisted solution.'
 date: 2017-06-12
 permalink: /posts/2017/06/buffon-needle-noodle/
 tags:
