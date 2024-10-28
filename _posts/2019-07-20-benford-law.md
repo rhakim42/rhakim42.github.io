@@ -5,6 +5,7 @@ permalink: /posts/2019/07/benford-law/
 tags:
   - math
 ---
+<font color="red">This text is red!</font>
 
 A Motivating Game
 Let’s play a game. I’m going to think of an integer, and now you have to guess the first digit. Is there any way you can do better than randomly choosing a digit 1-9? For psychological reasons, my number is probably going to start with 7 (it is my favorite digit), but let’s suppose I was choosing purely randomly.
