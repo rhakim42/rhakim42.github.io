@@ -1,13 +1,13 @@
 ---
 title: 'A (Detailed) Look at the 4 Color Theorem'
-subtitle: 'A proof that went undone for 80 years – we’ll go from maps, to planar graphs, to Kempe chains, to the final computer assisted solution.'
+subtitle: "A proof that went undone for 80 years – we’ll go from maps, to planar graphs, to Kempe chains, to the final computer assisted solution."
 date: 2019-07-24
 permalink: /posts/2019/07/4-color-theorem/
 tags:
   - math
 --- 
 
-2-Coloring Doodles
+## 2-Coloring Doodles
 I was playing around with MS Paint recently and I ended up with a drawing that will probably look familiar to anyone who has ever idly messed around with MS Paint.
 ![image](https://github.com/user-attachments/assets/cd71913f-269c-4f51-a32c-68a313868c4d)
 
