@@ -1,19 +1,36 @@
+---
+title: 'Mathematicians\' Many Hats'
+date: 2019-07-12
+permalink: /posts/2019/07/mathematician-hats/
+tags:
+  - math
+---
 
 A Relatively Easy Riddle:
 Quite a while ago, I was introduced to a rather fun little brainteaser centering around colors of hats. The problem goes like this:
 
 There is a line of 100 mathematicians, each positioned so that he can see all the hats in front of him but none of the hats behind him (nor his own hat). Each of the mathematicians is randomly assigned a colored hat, which is either red or blue. Note that there do not have to be exactly 50 of each color (since each mathematician’s hat color is independent of the others). Now the mathematicians are asked to guess the color of their own hat, starting from the back of the line and everyone can hear the guesses. Assuming that they are allowed to confer beforehand to discuss a strategy, what is the maximum number of mathematicians who can guess correctly?
 
+![image](https://github.com/user-attachments/assets/a5df0f2b-a884-4560-83ac-ad425263ec6e)
 
 An initial thought is that the first mathematician can say the color of the hat in front of them in order to relay that information to the second mathematician (counting from the back of the line). The second mathematician would guess correctly, and then the third mathematician would say the color of the hat in front of him. Continuing on like this ensures that at least 50 mathematicians get their hat color right (with an expected value of 75 correct guesses). However, they can actually do substantially better than that. In fact, with the correct strategy, all but one mathematician (the first) can guess their hat color correctly. Can you figure out how it should be done? For some hints, consider the following:
 
 Each mathematician can see all of the hats in front of him, not just the one directly in front
 There are only two possible hat colors – what property of an integer might we use?
 Solution (to easy riddle)
+
+![image](https://github.com/user-attachments/assets/e61e3d6e-c7df-4028-a969-b9edb77fe3de)
+
 The solution is to decide on one color, let’s say red, to mean the first mathematician sees an even number of red hats, while the other color, blue, means they sees an odd number of red hats. Now the next mathematician can deduce his own hat color based on whether he sees an odd or even number of red hats (because he can see every hat the first mathematician saw except his own). He can make the decision based on this simple flowchart:
 
 
+![image](https://github.com/user-attachments/assets/baabd8f5-f5ce-423d-8ed4-b1d6e6ef87de)
+
+
 So the second mathematician can get his own hat color right. Now, the next mathematician (and every subsequent one) can figure out their hat color by analyzing the following formula:
+
+
+![image](https://github.com/user-attachments/assets/920648dc-9671-4455-bbe6-f0198564b381)
 
 
 Since every mathematician knows the parity (whether it is odd or even) of 3 numbers in this formula, they can figure out the parity of the 4th number. This means they know whether they are wearing 1 red hat or 0 red hats (meaning their hat is blue).
@@ -51,7 +68,9 @@ So even in the case where each mathematician has no additional information from 
 The answer (or at least how the weirdness is introduced) is that implicit in our strategy for the mathematicians is the axiom of choice. The axiom of choice says something fairly simple: that for any non-empty set, we can choose one element from it. We need to make this assumption because our mathematicians need to collectively decide on a representative element from each equivalence class (set) of hat color sequences. The axiom of choice is key to our strategy in the infinite case. But this seems like a rather tame assumption – isn’t it obvious that if you have a box with things in it, you can reach in and grab one?
 
 
+![image](https://github.com/user-attachments/assets/bd0c4d4e-ed9c-47dd-8bc6-7eb99c4c84d6)
 Credit: xkcd
+
 However, the axiom of choice tends to create some mathematical strangeness – weirder things can happen than mathematicians knowing their hat colors a little too well. For example, there is the Banach-Tarski Paradox, which states that the 3D solid unit ball can be decomposed into a finite number of pieces and then put back together (using only translations and rotations in space) into two identical copies of the original ball.
 
 Despite, this kind of paradoxical result, ZFC (with AC (axiom of choice) is still generally the paradigm of “choice” for set theorists. So if our infinite mathematician solution still seems a bit suspect to you, just replace the mathematicians with some modern-day set theorists and you should be alright.
