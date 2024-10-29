@@ -37,7 +37,8 @@ Work experience
  
 Talks and Visits
 ======
-* (To occur) Oral presentation at Conference on Algorithmic Decision Theory [(ADT)](https://preflib.github.io/adt2024/), New Jersey, October 2024
+* (To Occur) Poster presentation at Conference on Neural Information Processing Systems [(NeurIps)](https://neurips.cc/), Vancouver, December 2024
+* Oral presentation at Conference on Algorithmic Decision Theory [(ADT)](https://preflib.github.io/adt2024/), New Jersey, October 2024
 * Oral presentation at Symposium for Algorithmic Game Theory [(SAGT)](https://www.cwi.nl/en/groups/networks-and-optimization/events/sagt-2024/), Amsterdam, September 2024
 * Invited participant to Workshop on Algorithms, Learning, and Economics [(WALE)](https://wale.gr/2024/), Kefalonia, June 2024
 * Summer research visit to Archimedes Athena Research Unit [(ARCHIMEDES)](https://archimedesai.gr/en/), Athens, June 2023
