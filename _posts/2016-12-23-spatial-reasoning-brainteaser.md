@@ -10,7 +10,7 @@ tags:
 
 In chemistry, we’re learning about molecular geometry which is a subject that takes a bit of visualization to understand. My teacher mentioned that girls tend to have poorer spatial reasoning skills, maybe because we are less likely to play with blocks and other similar toys as children. (He was probably citing this study). A few of the boys in my class were getting a little too cocky so I gave them this tough orthogonal projection problem to think about. After that they definitely realized that a slight tendency one way or another doesn’t mean much for individual cases or skill levels.
 
-Anyways, just a fun little problem that tests your sense of spatial reasoning. Usually people think about it for a wile, get stuck, declare that it’s impossible, then figure it out in a flash of insight.
+Anyways, just a fun little problem that tests your sense of spatial reasoning. Usually people think about it for a while, get stuck, declare that it’s impossible, then figure it out in a flash of insight.
 
 The goal is to draw the 3-dimensional (isometric) shape that matches the orthogonal projections:
 
