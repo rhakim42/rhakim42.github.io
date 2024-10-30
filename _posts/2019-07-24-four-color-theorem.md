@@ -52,7 +52,8 @@ But this by itself does not imply that all maps can be colored with 4 colors. It
 
 
 If we 4 color the map on the left, and then add the encircling region, the map now requires 5 colors (as shown on the right). We can recolor the map on the right using 4 colors, but it is nontrivial to show that is always possible.
-Maps → Graphs
+
+## Maps → Graphs
 This problem can be simplified somewhat by taking maps, which contain weird shapes of varying sizes, and translating them into “graphs” which only contain nodes and connecting edges. Every region will get a node, and if two regions share a side, then their nodes will be connected with an edge. This removes a lot of the complexity of the individual shapes involved in the maps, but preserves all the information we need to color them (because, based on the edges, we know which nodes cannot be the same color).
 
 ![image](https://github.com/user-attachments/assets/1987d427-82f0-4324-bcd3-d9a3089b6e3f)
@@ -64,12 +65,13 @@ All possible maps will lead to “planar” graphs, meaning that they can be dra
 ## Proof of the 6-Color theorem
 Since the 4-color theorem is rather difficult to prove, let us start with the substantially easier (and weaker) 6-color theorem: no map requires more than 6 colors to ensure that no two adjacent regions have the same color.
 
-We can apply theorems about planar graphs in order to prove the 6-colorability of all maps. One theorem is that every planar graph with v \geq 3 vertices and e edges, e \leq  3v - 6 (for a proof, see the Testing for Planarity section on this page). We can use this to prove that every planar configuration will have at least one vertex that connects to \leq 5 edges.
+We can apply theorems about planar graphs in order to prove the 6-colorability of all maps. One theorem is that every planar graph with $v \geq 3$ vertices and $e$ edges, $e \leq  3v - 6$ (for a proof, see the Testing for Planarity section on this page). We can use this to prove that every planar configuration will have at least one vertex that connects to $\leq 5$ edges.
 
 ![image](https://github.com/user-attachments/assets/1a945ae4-662b-456f-9efc-55e7189b5931)
 
 At least one of the vertices in any planar graph will look like one of the above vertices (shown in red). In other words, at least one vertex in a planar graph has less than or equal to 5 edges connected to it.
-We will use proof by contradiction, so assume that every vertex in a graph connects to \geq 6 edges. Every edge connects to exactly 2 vertices, so e \geq \frac{6}{2}v. From the theorem above we know e \leq  3v - 6, so therefore 3v \leq  3v - 6 which is an obvious contradiction.
+
+We will use proof by contradiction, so assume that every vertex in a graph connects to $\geq 6$ edges. Every edge connects to exactly 2 vertices, so $e \geq \frac{6}{2}v$. From the theorem above we know $e \leq  3v - 6$, so therefore $3v \leq  3v - 6$ which is an obvious contradiction.
 
 We can use proof by contradiction again to prove the 6-color theorem. Imagine there are some graphs that are not 6-colorable. If this is true, then there must be some minimal graph that is not 6-colorable. This graph – called a minimal criminal for “breaking the law” of 6-colorability – has the property that removing any edge will render it 6-colorable.
 
@@ -88,9 +90,10 @@ From our proof of the 6-color theorem, we can realize that the only case that do
 ![image](https://github.com/user-attachments/assets/897bdc19-30c5-4adf-bcf0-157068dcc678)
 
 Recoloring a subgraph using the method of Kempe chains. The colors may not be in this order, but the basic idea is always the same.
+
 Kempe cleverly used the method of Kempe chains to prove the 4-color theorem – or so he and the mathematical community thought. The proof appeared valid for 11 years until Percy John Heawood published a paper pointing out that in a particular subcase, Kempe’s method will not yield a 4-coloring (see here for more detail). Kempe tried to revise his proof, but was unable to do so. Note: The proof of the 5-color theorem using Kempe chains that we showed above is still valid.
 
-Appel and Hakken’s Computer Assisted Proof
+## Appel and Hakken’s Computer Assisted Proof
 After Heawood refuted Kempe’s proof, mathematicians continued to try to prove (or disprove!) the 4-color theorem for over 80 years. Finally, in 1976, Kenneth Appel and Wolfgang Hakken published a paper called “Every Planar Map is Four Colorable”. Their eventual successful method ended up being similar to the proofs we discussed for the 6-color theorem and the 5-color theorem, only substantially more complicated.
 
 The idea of the proof is to first come up with a set of configurations (which are subgraphs) such that every planar graph must contain at least one. This is called an unavoidable set. Then, it must be proved that every configuration in the set is reducible. This means that we can remove it from the larger graph, recolor the surrounding nodes with only 4 colors, and then reinsert the configuration colored with only 4 colors as well.
@@ -100,6 +103,7 @@ While this sounds complex due to the terminology, this is exactly what we did fo
 ![image](https://github.com/user-attachments/assets/b9110868-20cd-4d32-b800-dd502a249405)
 
 Unavoidable set of configurations used in the proof of the 5 and 6-color theorems
+
 Then we showed that each of these 5 configurations was reducible if we had 6-colors (just using common sense) or if we had 5-colors (using the method of Kempe chains). This proved there could be no minimal counterexample to the theorems, and therefore that the theorems were true.
 
 Now the question becomes, how did Appel and Hakken come up with an unavoidable set of configurations where every element was reducible? They used something called the method of discharging. This involves treating a planar graph as an electrical network with charge assigned to the vertices such that the charges sum to a small positive value. Then the charges are redistributed in the graph via a set of discharging rules, which preserve the sum of the charges. The discharging rules are designed so that only certain subgraphs can “hold” positive charge. Since the charge is conserved, these subgraphs form a set of unavoidable configurations for the graph as a whole.
