@@ -37,11 +37,12 @@ Work experience
  
 Talks and Visits
 ======
-* (To Occur) Poster presentation at Conference on Neural Information Processing Systems [(NeurIps)](https://neurips.cc/), Vancouver, December 2024
-* Oral presentation at Conference on Algorithmic Decision Theory [(ADT)](https://preflib.github.io/adt2024/), New Jersey, October 2024
-* Oral presentation at Symposium for Algorithmic Game Theory [(SAGT)](https://www.cwi.nl/en/groups/networks-and-optimization/events/sagt-2024/), Amsterdam, September 2024
-* Invited participant to Workshop on Algorithms, Learning, and Economics [(WALE)](https://wale.gr/2024/), Kefalonia, June 2024
-* Summer research visit to Archimedes Athena Research Unit [(ARCHIMEDES)](https://archimedesai.gr/en/), Athens, June 2023
+* Accepted participant (25% acceptance rate) to UM6P Winter School on Data Economics [(Winter School)](https://mcgt.um6p.ma/en/seminars-conferences/winter-days), Rabat, Morocco, January 2025
+* Poster presentation at Conference on Neural Information Processing Systems [(NeurIps)](https://neurips.cc/), Vancouver, Canada, December 2024
+* Oral presentation at Conference on Algorithmic Decision Theory [(ADT)](https://preflib.github.io/adt2024/), New Jersey, USA, October 2024
+* Oral presentation at Symposium for Algorithmic Game Theory [(SAGT)](https://www.cwi.nl/en/groups/networks-and-optimization/events/sagt-2024/), Amsterdam, Netherlands, September 2024
+* Invited participant to Workshop on Algorithms, Learning, and Economics [(WALE)](https://wale.gr/2024/), Kefalonia, Greece, June 2024
+* Summer research visit to Archimedes Athena Research Unit [(ARCHIMEDES)](https://archimedesai.gr/en/), Athens, Greece, June 2023
 
 Service
 ======
