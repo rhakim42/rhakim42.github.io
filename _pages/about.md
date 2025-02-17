@@ -17,7 +17,7 @@ Rashida Hakim, Jason Milionis, Christos Papadimitriou, Georgios Piliouras
 
 **The Fairness-Quality Trade-off in Clustering** - [arXiv](https://arxiv.org/abs/2408.10002)  
 Rashida Hakim, Ana-Andreea Stoica, Christos Papadimitriou, Mihalis Yannakakis  
-*To appear at NeurIps 2024*
+*Main Track Poster, NeurIps 2024*
  
 Contact
 ======
