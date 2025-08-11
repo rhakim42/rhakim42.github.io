@@ -24,6 +24,37 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
+<style>
+  /* one knob for fixed image width */
+  :root { --thumb-col: 120px; }
+  
+  /* Make each row a 2-column grid: text | fixed-width image */
+  .layout--archive .archive__item .postline{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) var(--thumb-col) !important;
+    column-gap:12px !important;
+    align-items:start !important;
+  }
+  
+  /* Let the title column actually shrink/grow */
+  .layout--archive .archive__item .postline__title{ min-width:0 !important; }
+  .layout--archive .archive__item .postline__title .archive__item-title{ margin:0 !important; line-height:1.2; }
+  .layout--archive .archive__item .archive__item-subtitle{ margin-top:0; }
+  
+  /* Fixed WIDTH, variable HEIGHT (natural aspect), top-aligned */
+  .layout--archive .archive__item .postline__thumb{
+    width:var(--thumb-col) !important;
+    justify-self:end; 
+    align-self:start;
+    display:block;
+  }
+  .layout--archive .archive__item .postline__thumb img{
+    width:100% !important;
+    height:auto !important;      /* keep aspect ratio */
+    display:block;
+    border-radius:8px;            /* optional */
+  }
+</style>
 
 <!-- Support for MatJax -->
 <script type="text/javascript" id="MathJax-script" async
