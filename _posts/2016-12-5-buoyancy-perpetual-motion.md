@@ -3,6 +3,7 @@ title: 'Buoyancy and Perpetual Motion'
 subtitle: 'Debunking a convincing “free-energy” device'
 date: 2016-12-5
 permalink: /posts/2016/12/buoyancy-perpetual-motion/
+thumb: /images/perp_motion.png
 tags:
   - physics
   - math

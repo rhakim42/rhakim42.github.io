@@ -3,6 +3,7 @@ title: 'Spatial Reasoning Brainteaser'
 subtitle: 'A simple puzzle involving engineering drawings.'
 date: 2016-12-23
 permalink: /posts/2016/12/spatial-reasoning/
+thumb: /images/spatial_brain.png
 tags:
   - physics
   - math

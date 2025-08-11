@@ -39,3 +39,41 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* one knob: fixed width for all thumbs */
+:root { --thumb-col: 140px; }  /* try 96–140px to taste */
+
+/* Row: text | fixed-width image */
+.archive__item .postline {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--thumb-col);
+  column-gap: 12px;
+  align-items: start;            /* align both cells to the top */
+}
+
+/* Let the text cell actually shrink/grow */
+.archive__item .postline__title { min-width: 0; }
+
+/* Make the title’s top = the true top (prevents margin pushing it down) */
+.archive__item .postline__title .archive__item-title {
+  margin: 0;                     /* key for top alignment */
+  line-height: 1.2;
+}
+/* (Optional) also remove top margin on subtitle if your theme adds one */
+.archive__item .archive__item-subtitle { margin-top: 0; }
+
+/* Right cell (link wrapper) */
+.archive__item .postline__thumb {
+  width: var(--thumb-col);
+  justify-self: end;             /* flush to the right */
+  align-self: start;             /* top-align with title */
+  display: block;
+}
+
+/* Fixed WIDTH, variable HEIGHT (natural aspect ratio), no cropping */
+.archive__item .postline__thumb img {
+  width: 100%;
+  height: auto;                  /* let height vary */
+  display: block;                /* avoids baseline gaps */
+  border-radius: 8px;            /* optional */
+}

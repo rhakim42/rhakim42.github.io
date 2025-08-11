@@ -3,6 +3,7 @@ title: 'Buffon’s Needles and Noodles'
 subtitle: 'A probability exercise leads to an exploration of circles and other shapes of constant width.'
 date: 2017-06-12
 permalink: /posts/2017/06/buffon-needle-noodle/
+thumb: /images/buffon_needle.png
 tags:
   - math
 ---

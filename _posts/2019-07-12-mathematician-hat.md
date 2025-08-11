@@ -3,6 +3,7 @@ title: "Mathematicians' Many Hats"
 subtitle: Solving riddles about hat colors with logic and a bit of set theory.
 date: 2019-07-12
 permalink: /posts/2019/07/mathematician-hats/
+thumb: /images/math_hats.png
 tags:
   - math
 ---

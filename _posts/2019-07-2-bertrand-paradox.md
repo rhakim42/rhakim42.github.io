@@ -3,6 +3,7 @@ title: 'A Variation on Bertrand’s Paradox'
 subtitle: 'Understanding the importance of a well-posed problem by examining a math problem with 3 different “correct” solutions.'
 date: 2019-07-2
 permalink: /posts/2017/06/bertrand-paradox/
+thumb: /images/bertrand_para.png
 tags:
   - math
 ---
