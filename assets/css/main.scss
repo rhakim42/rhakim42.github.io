@@ -41,13 +41,13 @@
 @import "print";
 
 /* one knob: fixed width for all thumbs */
-:root { --thumb-col: 140px; }  /* try 96–140px to taste */
+:root { --thumb-col: 200px; }  /* try 96–140px to taste */
 
 /* Row: text | fixed-width image */
 .archive__item .postline {
   display: grid;
   grid-template-columns: minmax(0, 1fr) var(--thumb-col);
-  column-gap: 12px;
+  column-gap: 30px;
   align-items: start;            /* align both cells to the top */
 }
 
