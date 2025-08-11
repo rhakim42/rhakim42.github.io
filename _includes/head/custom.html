@@ -24,6 +24,14 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
+<style id="thumb-fix">
+.postline{display:grid;grid-template-columns:minmax(0,1fr) 120px;column-gap:12px;align-items:start}
+.postline__title{min-width:0}
+.postline__title .archive__item-title{margin:0;line-height:1.2}
+.postline__thumb{width:120px;display:block;justify-self:end;align-self:start}
+.postline__thumb img{width:100%;height:auto;display:block;border-radius:8px}
+</style>
+
 <style>
   /* one knob for fixed image width */
   :root { --thumb-col: 120px; }
