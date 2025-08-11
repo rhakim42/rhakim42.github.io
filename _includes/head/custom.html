@@ -34,13 +34,13 @@
 
 <style>
   /* one knob for fixed image width */
-  :root { --thumb-col: 200px; }
+  :root { --thumb-col: 120px; }
   
   /* Make each row a 2-column grid: text | fixed-width image */
   .layout--archive .archive__item .postline{
     display:grid !important;
     grid-template-columns:minmax(0,1fr) var(--thumb-col) !important;
-    column-gap: 12px !important;
+    column-gap:12px !important;
     align-items:start !important;
   }
   
