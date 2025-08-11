@@ -18,7 +18,7 @@ Publications
 ======
 **The Fairness-Quality Trade-off in Clustering** - [arXiv](https://arxiv.org/abs/2408.10002)  
 Rashida Hakim, Ana-Andreea Stoica, Christos Papadimitriou, Mihalis Yannakakis  
-*To appear at NeurIps 2024*
+NeurIps 2024, Main Track (Poster)
 
 **Swim till You Sink: Computing the Limit of a Game** - [arXiv](https://arxiv.org/abs/2408.11146)  
 Rashida Hakim, Jason Milionis, Christos Papadimitriou, Georgios Piliouras  
