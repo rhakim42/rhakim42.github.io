@@ -21,7 +21,7 @@ The buoyant force on the right “water ball” is exactly enough to suspend tha
 
 where  $\rho$  is the mass density of the liquid,  $g$  is gravity, and  $V$  is the volume of the object. Remember, since water pressure is so crucial to buoyancy, it is important not to discount it when looking at buoyancy based “perpetual motion”.
 
-Simple “Perpetual Motion” Machine that works based on buoyancy.
+## Simple “Perpetual Motion” Machine that works based on buoyancy.
 
 Before we get to the machine I was talking about earlier, let’s look at this simpler machine. (I don’t know whose original idea this was but I have seen several iterations of it online).
 
@@ -37,7 +37,7 @@ The argument for why this machine rotates is that the ping-pong balls on the rig
  $$pressure (at\ bottom) = \rho g h$$ 
  $$Work_{done\ by\ ball\ on\ water} = \rho g V h$$ 
 
-More Complicated “Perpetual Motion” Machine:
+## More Complicated “Perpetual Motion” Machine:
 Finally we arrive at the machine that inspired this write-up. It appeared in a footnote of Eric Rogers’ book, Physics for Inquiring Minds, and showing how it doesn’t work was left as a challenge for the reader.
 
 ![image](https://github.com/user-attachments/assets/e6efa6bd-9122-4729-a1a5-14032fd20a65)
