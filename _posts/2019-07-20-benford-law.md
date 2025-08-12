@@ -25,7 +25,7 @@ We can see the trend more clearly by graphing frequency (of being the first digi
 ![image](https://github.com/user-attachments/assets/6f81e73a-40fe-4853-b69b-d25fd6265adc)
 
 
-So now you know that you should guess 1, but how likely are you to be correct using this strategy? Basically, we want to determine the average value of each of these curves. The standard strategy for doing this is to integrate the curve over a finite interval and then divide by the length of the interval. Using the interval 1 to 1ooo, we can find that the (approximate) probabilities for each digit are as shown below.
+So now you know that you should guess 1, but how likely are you to be correct using this strategy? Basically, we want to determine the average value of each of these curves. The standard strategy for doing this is to integrate the curve over a finite interval and then divide by the length of the interval. Using the interval 1 to 1,000, we can find that the (approximate) probabilities for each digit are as shown below.
 
 
 ![image](https://github.com/user-attachments/assets/02fd42ed-76ca-40bf-b16a-3f0f0b1fb97f)
