@@ -77,4 +77,4 @@ Credit: xkcd
 
 However, the axiom of choice tends to create some mathematical strangeness – weirder things can happen than mathematicians knowing their hat colors a little too well. For example, there is the Banach-Tarski Paradox, which states that the 3D solid unit ball can be decomposed into a finite number of pieces and then put back together (using only translations and rotations in space) into two identical copies of the original ball.
 
-Despite, this kind of paradoxical result, ZFC (with AC (axiom of choice) is still generally the paradigm of “choice” for set theorists. So if our infinite mathematician solution still seems a bit suspect to you, just replace the mathematicians with some modern-day set theorists and you should be alright.
+Despite, this kind of paradoxical result, ZFC with AC (axiom of choice) is still generally the paradigm of “choice” for set theorists. So if our infinite mathematician solution still seems a bit suspect to you, just replace the mathematicians with some modern-day set theorists and you should be alright.
