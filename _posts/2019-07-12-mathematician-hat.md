@@ -19,9 +19,8 @@ An initial thought is that the first mathematician can say the color of the hat 
 
 Each mathematician can see all of the hats in front of him, not just the one directly in front
 There are only two possible hat colors – what property of an integer might we use?
-Solution (to easy riddle)
 
-![image](https://github.com/user-attachments/assets/e61e3d6e-c7df-4028-a969-b9edb77fe3de)
+### Solution (to easy riddle)
 
 The solution is to decide on one color, let’s say red, to mean the first mathematician sees an even number of red hats, while the other color, blue, means they sees an odd number of red hats. Now the next mathematician can deduce his own hat color based on whether he sees an odd or even number of red hats (because he can see every hat the first mathematician saw except his own). He can make the decision based on this simple flowchart:
 
